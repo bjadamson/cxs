@@ -50,7 +50,7 @@ add_executable(cxs ${GLOBBED_SOURCES})
 include(FindPkgConfig)
 
 ## We should get these through conan.io
-target_include_directories(cxs PUBLIC ${INTERNAL_INCLUDE_DIRS})
+target_include_directories(cxs PUBLIC ${INTERNAL_INCLUDE_DIRS} ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(cxs pthread)
 EOF
 
